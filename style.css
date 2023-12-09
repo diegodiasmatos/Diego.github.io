@@ -156,3 +156,10 @@ font-size: 2rem;
 border-bottom: #e21 solid 5px;
 transition: 1s ease-in-out;
 }
+em{
+  font-weight: 700;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  border-top: dotted;
+  
+}
