@@ -120,18 +120,12 @@ p {
   grid-template-columns: auto 1fr;
   gap: 10px 20px;
   padding: 20px;
+  border-left: transparent solid 3px;
 }
 .vantagens-item:hover{
   border-left: #e21 solid 3px;
-  animation: spin 1s  ease-in-out;
+ 
 }
-@keyframes spin{
-  to{
-    transform: rotate(368deg)
-    ;
-  }
-}
-
 .vantagens-item:nth-child(odd){
   background-color: #f7f7f7;
   border-top: #f7f7f7;
@@ -152,10 +146,6 @@ p {
 .texto{
 font-size: 2rem;
 }
-.texto:hover{
-border-bottom: #e21 solid 5px;
-transition: 1s ease-in-out;
-}
 em{
   font-weight: 700;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -163,3 +153,42 @@ em{
   border-top: dotted;
   
 }
+@media screen and (max-width:1000px) {
+  header{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+   
+  }
+  .menu{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  .conteudo{
+   
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+ .subtitulo{
+  padding: 80px;
+  margin: 40px;
+ }
+    
+  .introducao{
+    text-align: left;
+  }
+}
+
+
+  
+
